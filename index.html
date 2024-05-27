@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Booking</title>
+        <link
+        rel="icon"
+        type="image/x-icon"
+        href="image/images/logo.svg"
+      />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Poppins:wght@700&display=swap" rel="stylesheet">
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      />
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    
+       <nav class="navbar navbar-expand-lg bg-body-tertiary  z-3 mb-4 position-sticky">
+        <div class="container-fluid py-1 ">
+          <img src="image/images/logo.svg" alt="page logo" class="logo "/>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0 ">
+              <li class="nav-item nav-font px-3 ">
+                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Listings<span><i class="fa-solid fa-chevron-down"></i></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Travelling</a></li>
+                  <li><a class="dropdown-item" href="#">Touring</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Hiking</a></li>
+                </ul> 
+              </li>
+              <li class="nav-item dropdown nav-font px-3 ">
+                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages<span><i class="fa-solid fa-chevron-down"></i></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Places</a></li>
+                  <li><a class="dropdown-item" href="#">Mountains</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Spa</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown nav-font px-3 ">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Accounts<span><i class="fa-solid fa-chevron-down"></i></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Spain</a></li>
+                  <li><a class="dropdown-item" href="#">Brazilia</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Egypt</a></li>
+                </ul>
+              </li>
+              <li class="nav-item nav-font">
+                <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis"></i></a>
+              </li>
+            </ul>
+
+            <div class="second-content ms-6 ps-auto ">
+              <ul class=" nav nav-pills wrap ">
+                <li class="nav-item  ">
+                  <a class="nav-link activ" aria-current="page" href="#"><i class="fa-solid fa-hotel"></i>Hotel</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link pills " aria-current="page" href="#"><i class="fa-solid fa-plane"></i>Flight</a>
+                </li>
+
+                <li class="nav-item  ">
+                  <a class="nav-link pills" aria-current="page" href="#"><i class="fa-solid fa-earth-africa"></i>Tour</a>
+                </li>
+
+                <li class="nav-item ">
+                  <a class="nav-link pills " aria-current="page" href="#"><i class="fa-solid fa-car"></i>Cab</a>
+                </li>
+                <ul class="d-flex justify-content-end list-unstyled ">
+                  <li class="nav-item position-relative">
+                    <span class="red-dot"></span>
+                    <a class="nav-link bg-body-secondary text-dark" aria-current="page" href="#"><i class="fa-regular fa-bell "></i> </a>
+                  </li>
+                  <li class="">
+                    <a aria-current="page" href="#"><img class="w-20 rounded-1 ms-2" src="image/images/avatar/03.jpg" alt=""/></a>
+                  </li>
+                  
+                </ul>
+              </ul>
+
+             
+
+            </div>
+            
+          </div>
+
+          
+        </div>
+      </nav>
+
+
+
+      
+    <div class="container p-5 ">
+      <section>
+        <div class="row position-relative ">
+          <div class="col-md-6 mt-4">
+            <div class="layer1.1 edit ">
+              <article class="position-relative" >
+                <h1 class="fs">Find the top Hotels nearby.</h1>
+                <span  class="mb-2"><svg width="390.5px" height="21.5px" viewBox="0 0 445.5 21.5" class="fill-in">
+									<path class="fill-primary opacity-7 " d="M409.9,2.6c-9.7-0.6-19.5-1-29.2-1.5c-3.2-0.2-6.4-0.2-9.7-0.3c-7-0.2-14-0.4-20.9-0.5 c-3.9-0.1-7.8-0.2-11.7-0.3c-1.1,0-2.3,0-3.4,0c-2.5,0-5.1,0-7.6,0c-11.5,0-23,0-34.5,0c-2.7,0-5.5,0.1-8.2,0.1 c-6.8,0.1-13.6,0.2-20.3,0.3c-7.7,0.1-15.3,0.1-23,0.3c-12.4,0.3-24.8,0.6-37.1,0.9c-7.2,0.2-14.3,0.3-21.5,0.6 c-12.3,0.5-24.7,1-37,1.5c-6.7,0.3-13.5,0.5-20.2,0.9C112.7,5.3,99.9,6,87.1,6.7C80.3,7.1,73.5,7.4,66.7,8 C54,9.1,41.3,10.1,28.5,11.2c-2.7,0.2-5.5,0.5-8.2,0.7c-5.5,0.5-11,1.2-16.4,1.8c-0.3,0-0.7,0.1-1,0.1c-0.7,0.2-1.2,0.5-1.7,1 C0.4,15.6,0,16.6,0,17.6c0,1,0.4,2,1.1,2.7c0.7,0.7,1.8,1.2,2.7,1.1c6.6-0.7,13.2-1.5,19.8-2.1c6.1-0.5,12.3-1,18.4-1.6 c6.7-0.6,13.4-1.1,20.1-1.7c2.7-0.2,5.4-0.5,8.1-0.7c10.4-0.6,20.9-1.1,31.3-1.7c6.5-0.4,13-0.7,19.5-1.1c2.7-0.1,5.4-0.3,8.1-0.4 c10.3-0.4,20.7-0.8,31-1.2c6.3-0.2,12.5-0.5,18.8-0.7c2.1-0.1,4.2-0.2,6.3-0.2c11.2-0.3,22.3-0.5,33.5-0.8 c6.2-0.1,12.5-0.3,18.7-0.4c2.2-0.1,4.4-0.1,6.7-0.1c11.5-0.1,23-0.2,34.6-0.4c7.2-0.1,14.4-0.1,21.6-0.1c12.2,0,24.5,0.1,36.7,0.1 c2.4,0,4.8,0.1,7.2,0.2c6.8,0.2,13.5,0.4,20.3,0.6c5.1,0.2,10.1,0.3,15.2,0.4c3.6,0.1,7.2,0.4,10.8,0.6c10.6,0.6,21.1,1.2,31.7,1.8 c2.7,0.2,5.4,0.4,8,0.6c2.9,0.2,5.8,0.4,8.6,0.7c0.4,0.1,0.9,0.2,1.3,0.3c1.1,0.2,2.2,0.2,3.2-0.4c0.9-0.5,1.6-1.5,1.9-2.5 c0.6-2.2-0.7-4.5-2.9-5.2c-1.9-0.5-3.9-0.7-5.9-0.9c-1.4-0.1-2.7-0.3-4.1-0.4c-2.6-0.3-5.2-0.4-7.9-0.6 C419.7,3.1,414.8,2.9,409.9,2.6z"></path>
+								</svg></span>
+                <p class="lead">We bring you not only a stay option, but an experience in your budget to enjoy the luxury.</p>
+                
+              </article>
+              <button type="button" class=" btn btn-primary button-color btn-lg">Discover Now</button>
+              <span class="second-button position-relative ms-4 me-2">
+                <img  src="image/images/avatar/02.jpg" alt="avatar" class=" w-30 "/>
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span>Watch Our Story</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="layer1.2 position-relative">
+              <img src="image/images/bg/06.jpg" alt="" class="w-100 shadow rounded-2"/>
+              <div class="headset shadow text-center p-3">
+                <i class="fa-solid fa-headset fs-1 text-danger "></i>
+                <h4 class="fw-bold m-0">24 / 7</h3>
+                <p class="fs-10 m-0">Guide Supports</p>
+              </div>
+
+              <div class="circle-img translate-middle shadow">
+              </div>
+              <div class="circle-img2 translate-middle shadow">
+              </div>
+              <svg width="163px" height="163px" viewBox="0 0 163 163" class="tiger">
+                <path class="fill-warning" d="M145.6,66.2c-0.9-0.3-1.6,0.2-2.1-0.4c-0.5-0.7-1-1.5-1-2.4c0-3.1,0.1-6.2,0-9.3c0-0.7,0.3-1.3,0.5-1.9 c0.8-1.6,1.6-3.2,2.7-4.5c0.5-0.6,1.2-1.2,2-1.5c0.4-0.2,0.8,0.4,1.3-0.1c0.4-0.4,1,0.7,1.6,0.7c0.4,1-0.4,1.5-1,2.1 c0.7,0.3,1.4,0.3,2.1,0.7c0.6,0.4,1.2,0.7,1,1.5c-0.2,1,0.6,1.3,1,1.9c-0.2,0.3-0.6,0.4-0.5,0.8c1.2,3.2,0.3,5.4-0.7,8.1 c-0.3,0.7-0.7,1.6-0.7,2.2c-0.1,1.5-1.2,2.7-1.4,4.1c-0.2,1.1-0.9,1.7-2.1,1.6c-0.2,0-0.4,0.5-1,0.4c-0.2-0.2-0.7-0.5-0.7-0.8 c0-1-0.1-1.7-1.1-2.1C145.5,67.2,145.6,66.6,145.6,66.2"></path>
+                <path class="fill-warning" d="M94.3,143.5c1.1,0.3,2.4-0.5,3.2,0.7c-0.4,0.7-0.7,1.4-1,2.1c0.5,0.5,0.7,0.2,1.2,0.1c1.6-0.6,2-0.4,2.5,1.2 c0.1,0.2,0,0.6,0.3,0.6c1.8,0.4,1.4,2.2,2.1,3.2c-0.8,0.9,0.5,1.8,0.1,2.6c-0.5,0.8-0.3,2-1.3,2.6c-0.3,0.2-0.1,0.5-0.2,0.7 c-0.3,2.1-1.2,3.7-3.4,4.4c-0.3,0.1-0.4,0.6-1,0.4c-0.3-0.6-0.6-1.3-1-1.9c-0.5-0.2-1.5,0.3-1.4-1h-3c-0.2-1.4,0-2.9-1.1-3.9 c-0.1-0.1-0.1-0.4,0-0.5c0.7-1.2,0.2-2.6,0.7-3.8c0.3-0.6,0.4-1,0.1-1.6c-0.9-1.3,0-2.4,0.7-3.3C92.5,145,93.4,144.3,94.3,143.5"></path>
+                <path class="fill-warning" d="M119.6,77.3c-0.4,0.8-1.1,0.6-2,0.8c0.2,1.1-0.4,2.2,0.5,3.3c-0.8,0-0.8,0-1.2-0.3c-0.6,0.3-0.8,1-1.2,1.6 c0.1-1.9-0.6-3.2-2-4.1c-0.6-0.1-0.7,0.3-1,0.5c-1-1.9-1-2.8-0.2-7.7c0.4-2.5,1.7-4.6,3.6-6.8c0.6-0.1,1.5,1.5,2.3,0 c0.8,1.5-0.7,2.3-0.8,3.7c0.8-0.4,1.6-0.7,2.4-0.4c0.4,0.4-0.1,1,0.3,1.4c0.8,0.6,1.4,1.3,0.4,2.3c1.1,0.8-0.3,1.5-0.1,2.4 c0.2,0.8,0,1.7,0,2.5c-0.8-0.2-1-1.1-1.8-1C118.2,76.4,119.5,76.5,119.6,77.3"></path>
+                <path class="fill-warning" d="M25,131c-0.3-0.6-1.2-0.3-1.7-0.5v-1.2c-0.1-0.1-0.1-0.2-0.2-0.2c-1.4,0.5-2.2-1-3.4-1.2 c-1.2-0.1-1.9-1-2.1-2.2c-0.1-0.5,0.1-0.8,0.5-1.1c-2-1.7-0.8-3.4-0.1-5.1c0.8-2.2,2.6-2.5,4.6-2.4c0.4,1.1,0.2,2-0.6,2.7 c1.5,1,2-0.5,3-0.8c0.3,0.6,0.6,1.2,0.9,1.6c0,0.6-0.8,0.8-0.4,1.4c0.7,0.8,0.9-0.5,1.7-0.3c1,0.9,0.9,2.2,0.8,3.4 c0.4,0.1,0.6,0.2,1,0.3c-0.1,0.6-1,0.8-1,1.5c0,0.8,0.8,0.2,1,0.7C27.7,128.8,26.9,130.3,25,131"></path>
+                <path class="fill-warning" d="M84.9,95H87c0.4,0.4,0.3,1.6-0.3,2.8c1.2,1,1.7-0.5,2.4-0.8c0.8,0,0.8,0.6,1.2,0.7c0.2,0.8-0.7,0.9-0.4,1.7 c0.5,0.3,1.7,0,1.9,0.9c0.2,0.7,0.3,1.5-0.5,2.1c0.3,0.1,0.6,0.2,0.9,0.3c-0.1,0.7-1.1,1.3-0.5,2.2c-1.1,1.5-3,2.1-4.4,3.3 c-0.3,0.2-0.8,1-1.5,0.5c-0.3-0.4,0.4-0.4,0.3-0.8c-0.7-0.5-1.6,0.1-2.4-0.3c-0.2-0.6,0.1-1.4-0.8-1.8c-1.1,0.5-2.2,0.7-3.2-0.8 c1.3-0.8,3-1.1,3.2-3c-1,0-1.7,0.9-2.7,1c-0.2-0.2-0.5-0.4-0.8-0.7c-0.1-0.1,0.1-0.1,0.2-0.3c0.6-1.1,2.4-1,2.5-2.5 c1.2-0.5,1.1-1.7,1.3-2.5C83.8,96.3,84.3,95.7,84.9,95"></path>
+                <path class="fill-warning" d="M41.2,153.9c0.3-0.7,0.9-0.8,0.4-1.6c-0.3-0.3-1.1,0.2-1.8-0.2c0-0.2-0.1-0.4-0.1-0.7c-0.1-0.1-0.2-0.2-0.3,0 c-0.3,0.4-0.7,0.4-1.1,0.4c-1.3,0-1.5-0.4-1.6-1.7c0-0.6,0.4-0.8,0.5-1.4c-0.4,0-0.8-0.1-1.4-0.1c-0.4-1.9,0.7-3.6,1.1-5.4 c0.2-0.9,1.6-1.3,2.7-1.3c0.4,0.2,0.3,0.6,0.3,0.7c0.2,0.4,0.3,0.3,0.4,0.1c0.6-0.5,1.3-0.6,1.7,0.1c0.5,0.7,1.1,0.6,1.8,0.7 c0.4,0.4,0.1,0.8,0.2,1.2c0.3,0.4,0.8,0.2,1.3,0.3c1,0.7,0.5,2.1,1.3,2.9C43.8,152.3,43.1,153.1,41.2,153.9"></path>
+                <path class="fill-warning" d="M70.9,43.4c-0.3-1.4-1.2-1.8-2.6-1.5c-1.2-2.3-0.8-4.8-0.5-7.2c0.1-0.5,0.4-1.1,0.3-1.7 c-0.2-1.1,0.5-1.9,0.6-2.9c0.1-0.7,1.3-0.9,2-1.3c0.9,0.8,0.9,0.8,1.2,2c0.3,0,0.6,0,0.4,0c1.3,0,0.8,0.9,1.3,1.2 c0.3,0.1,0.8,0.5,0.7,1c-0.2,0.8,1,1.4,0.5,2.1c-0.5,0.7-0.2,1.5-0.5,2.1c-0.8,1.5-1,3.2-1.5,4.8C72.6,43.1,72,43.4,70.9,43.4"></path>
+                <path class="fill-warning" d="M125.4,118.4c-0.4-0.3-0.6-0.7-1.3-0.8c-1.6-0.1-1.6-0.2-1.9-1.9c-1.1-0.4-2.2,0-3.2,0.4 c-0.5-0.5-0.2-0.9-0.4-1.4c0.4-0.1,0.7-0.2,1-0.4v-3c-0.5,0.2-1,0.3-1.7,0.5c-0.3,0-0.4-0.6-0.8-0.7c0.6-1.5,1.8-2.4,2.8-3.5 c1.3,0.3,2.6-1.1,3.8,0.4c0,0.1-0.1,1.8,0,2.1c-0.2,0-0.5,0.1-0.7,0.1c-0.2,0-0.3,0-0.5,0c-0.4,0.4-0.1,1.1-0.7,1.5 c1.3-0.5,2.4-1,3.3-2c0.4,0.4,0.7,0.8,1.4,0.6c-1.1,0.9,0.4,2.1-1,2.9c1,0,1.1-0.6,1.5-0.8c0.4-0.1,0.8-0.1,1.2-0.2 c0.5,1,1.1,1.8,0.6,3c-0.7,0.6-2.2,0.4-2.5,2.1c1.2-0.2,1.9-0.9,2.5-1.5c0.7,0.1,0.7,0.5,0.6,0.8c-1.3-0.1-1.2,1.5-2.3,1.9 c-0.9,0.3-1.6,1-2.7,1.8C124.7,119.5,125.1,119,125.4,118.4"></path>
+                <path class="fill-warning" d="M101.7,41c-0.3,0.3-0.6,0.6-0.9,0.9c0.9,0.6-0.9,1.6,0.4,2.1c-2,2.3-2,2.4-2.1,4.8h-2.4c-0.2-0.1,0-0.5-0.2-0.8 c-2.4-0.3-2.9-0.8-3-3.3c0-0.6,0.2-1.4-0.5-1.8c0.5-0.7,0.2-1.6,0.7-2.4c1-1.5,2.3-2.7,3.5-3.9c0.5-0.2,1-0.1,1.4,0 c0.2,1-1.1,1.6-0.2,2.6c0.3-0.4,0.6-0.8,0.9-1.3C100.2,39.2,101.7,39.5,101.7,41"></path>
+                <path class="fill-warning" d="M140.4,5.4c-0.4,0.6-1.2-0.1-1.5,0.6c0.7,0.4,1.5,0.1,2.3,0.2c0.3,1.1,0.9,2.1,1.3,3.2c0.9,2.4,0.3,4.4-0.6,6.6 c-0.4,0.9-0.9,1.2-1.9,1c-0.2-0.5-0.5-1.2-0.9-1.9c-0.6-0.2-1.5,0-1.9-1c0.1-1.7,0.1-3.6-1.1-5.2c0.4-0.7,0.7-1.3,1.1-1.9 c-0.3-0.1-0.6-0.2-1-0.4c0.2-0.8,0.5-1.6,1.3-2.3h2.2C140,4.6,140.5,4.8,140.4,5.4"></path>
+                <path class="fill-warning" d="M65.7,68.8c-0.4,0.6-0.9,0.4-1.4,0.4c-1.2-1.1-0.4-2.9-1.4-4.1c1.5-3,1.5-3,4.1-4.2c0.5,0.1,0.8,0.5,1,1 c0.1,0.6-0.8,0.7-0.5,1.3c0.5,0.6,0.9,0.2,1.2-0.2c1.5,0.6,1.1,2.5,2.4,3.3c-0.1,1.1,0.2,2.2-0.2,3.2L69,72.2c-0.3,0-0.7,0-1,0 c-0.3-0.5-0.9-2.2-0.8-2.4C66.7,69.6,66.2,69.2,65.7,68.8"></path>
+                <path class="fill-warning" d="M37.5,69.7c-0.5,0.2,0,0.9-0.4,1c-0.7,0.2-1-0.2-1.2-0.6c-0.4-0.7,0.1-1.6-0.2-2.2c-0.5-0.7-0.6-1.2-0.1-2 c0.5-0.6,0.2-1.5,0.6-2.3c0.9-2,0.9-2.1,3-2.1c0.1,0.1,0.2,0.1,0.2,0.2c0,0.3,0,0.7,0,1.1c0.7,0.4,1.7,0.1,2.1,1.3 c0.3,0.9,1.2,1.5,1,2.7c-0.2,0.9,0.1,1.8-0.8,2.5c-0.4,0.4-0.8,1.1-0.8,2c0,0.6-0.5,1-1.2,1.1c-0.6,0.1-1-0.3-1.2-0.7 C38,71,37.8,70.3,37.5,69.7"></path>
+                <path class="fill-warning" d="M53.9,87.8c0.7,0,1.4,0,2.1,0c0.5,0.3,0.1,1,0.4,1.4c0.4,0.3,0.8,0.1,1.2,0.2c0.6,1.2,1.4,2.4,1.7,3.6 c0.4,1.4-0.2,2.7-0.7,4c-1,0.4-1.5-0.4-2.1-0.9c-0.7,0-1.4,0-2.1,0c-0.4-1-0.8-1.8-2.1-1.5c-0.6-0.7,0.2-1.8-0.7-2.3 c0.5-0.6,0.9-1.3,1-2.1C52.8,89.2,53.2,88.5,53.9,87.8"></path>
+                <path class="fill-warning" d="M0.1,95.7c0.9-1.3,2.3-1.7,3.8-1.8c1,1.2-0.7,1.5-0.8,2.3c1.1,1,2-0.7,3.1,0c0.6,0.6-0.2,0.8-0.3,1.2 c0.4,0.5,1,0,1.4,0.3c0.4,1.1-0.3,2.3,0.6,3.3c-0.8,0.8-0.7,2.2-1.9,2.8c-1.1-0.2-1.8-1-2.6-1.7c-0.7-0.6-1.9-0.5-2.6-1.9 C1,98.9-0.4,97.4,0.1,95.7"></path>
+                <path class="fill-warning" d="M155.5,91.5c-0.9-0.5-1.7-0.7-2.3-1.6c0.4-0.2,0.8-0.5,1.2-0.7c-1.2-0.4-2.1,0.7-3.1,0c0.6-1,1.8-1,2.5-1.7 c0.1-0.6-0.3-0.6-0.7-0.7c-0.7-0.2-0.9,0.9-1.6,0.5c-0.3-0.3-0.4-0.7-0.1-0.9c1.7-1,3-2.3,4.5-3.5c0.9-0.7,1.1-0.9,2.5-1.2 c-0.1,0.5-0.6,0.7-0.9,1.1c0.7,0.7,1.3,0.1,1.9-0.2c0.1,1.1,0.9,1.9,0.5,3.4C158.3,87.4,157.4,89.8,155.5,91.5"></path>
+              </svg>
+
+            </div>
+
+           
+
+          </div>
+
+        <section class="floaty bg-white p-4 w-90 rounded-4 shadow d-flex">
+          <div class="col-md-4  ">
+            <div class="row pt-3 position-relative ">
+              <div class="move position-relative"><p class="labely translate-middle-y">Location</p></div>
+                <div class="box-1 d-flex ">
+                  <span><i class="fa-solid fa-location-dot fs-1 pe-2 align-self-center icon-color"></i></span>
+                  <select class=" form-select form-edit lead" aria-label="Default select example">
+                    <option selected>Select Location</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+          </div>
+
+
+            
+          </div>
+
+          <div class="col-md-4  ">
+      
+            <div class="form pt-3 position-relative ">
+              <div class="movee position-relative"><p class="labely translate-middle-y">Check-in-out</p></div>
+                <div class="box-1 d-flex ">
+                  <span><i class="fa-regular fa-calendar fs-1 pe-2 icon-color"></i></span>
+                  <select class=" form-select form-edit lead" aria-label="Default select example">
+                    <option selected>19 Sep to 28 Sep</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+          </div>
+
+
+            
+          </div>
+
+
+          <div class="col-md-4 ">
+      
+            <div class="form pt-3 position-relative ">
+              <div class="moveee position-relative"><p class="labely translate-middle-y">Guests & Rooms</p></div>
+                <div class="box-1 d-flex ">
+                  <span><i class="fa-regular fa-user fs-1 pe-2 icon-color"></i></span>
+                  <select class=" form-select form-edit lead" aria-label="Default select example">
+                    <option selected>2 guests 1 Room</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+          </div>
+          </div>
+
+          <div class="search translate-middle-x text-center shadow">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+           </div>
+
+         
+        </section>
+
+          
+          
+        </div>
+
+      </section>
+
+      <section class="book-enjoy mt-5">
+        <div class=" book row g-3 p-5 d-flex justify-content-around flex-nowrap gap-5 ">
+          <div class="col-md-3">
+            <div class="card-width">
+              <div class="card-body d-flex p-0 rounded-2 ">
+                <img src="image/images/offer/01.jpg" class="w-50 rounded-start-3" alt=""/>
+                <div class="content ps-2 m-0 text-center">
+                  <h6 class="fw-bold pt-2 ">daily 50 lucky winners geta free stay</h6>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+
+              </div>
+            </div>
+          
+          </div>
+          <div class="col-md-3">
+            <div class="card-width">
+              <div class="card-body d-flex p-0 rounded-2 ">
+                <img src="image/images/offer/02.jpg" class="w-50 rounded-start-3" alt=""/>
+                <div class="content ps-2 m-0 text-center">
+                  <h6 class="fw-bold pt-2 ">daily 50 lucky winners geta free stay</h6>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+
+              </div>
+            </div>
+           
+          </div>
+
+          <div class="col-md-3">
+            <div class="card-width">
+              <div class="card-body d-flex p-0 rounded-2 ">
+                <img src="image/images/offer/03.jpg" class="w-50 rounded-start-3" alt=""/>
+                <div class="content ps-2 m-0 text-center">
+                  <h6 class="fw-bold pt-2 ">daily 50 lucky winners geta free stay</h6>
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+
+              </div>
+            </div>
+           
+          </div>
+         
+
+         
+
+          
+        </div>
+
+
+      </section>
+    </div>
+
+    <section class="the-best">
+     
+      <div class="row p-5 ms-3">
+        <div class="col-md-6">
+          <div class="best-img position-relative ">
+            <img src="image/images/about/01.jpg" alt="" class="w-75 rounded-4 shadow "/>
+            <svg class=" star translate-middle-y" width="77px" height="77px">
+              <path d="M76.997,41.258 L45.173,41.258 L67.676,63.760 L63.763,67.673 L41.261,45.171 L41.261,76.994 L35.728,76.994 L35.728,45.171 L13.226,67.673 L9.313,63.760 L31.816,41.258 L-0.007,41.258 L-0.007,35.725 L31.816,35.725 L9.313,13.223 L13.226,9.311 L35.728,31.813 L35.728,-0.010 L41.261,-0.010 L41.261,31.813 L63.763,9.311 L67.676,13.223 L45.174,35.725 L76.997,35.725 L76.997,41.258 Z"></path>
+            </svg>
+
+            
+              <div class=" w-50  position-relative floating-card p-2 height rounded-4 shadow">
+              
+                <article class="d-flex justify-content-between">
+                 <h6>client</h6>
+                 <h6>Rating</h6>
+                
+                 
+                </article>
+                <div class="liked-icon d-flex">
+                 <img src="image/images/avatar/03.jpg" alt="" class="w-15 rounded-5 margin"/>
+                 <img src="image/images/avatar/02.jpg" alt="" class="w-15 rounded-5 margin1"/>
+                 <img src="image/images/avatar/03.jpg" alt="" class="w-15 rounded-5 margin2"/>
+                 <img src="image/images/avatar/04.jpg" alt="" class="w-15 rounded-5 margin3"/>
+                <div class="margin4 text-center "><p class="mt-2  text-white">1K+</p></div>
+                <span class="span-move fw-bold">4.5<i class="fa-solid fa-star text-warning"></i></span>
+                </div>
+
+                
+
+                
+                
+               
+             </div>
+            
+
+          </div>
+        </div>
+
+      <div class="col-md-6">
+        <div class="holidays">
+          <div class="holiday-header">
+            <h1 class="h-font fw-bold  mb-4 ">The Best Holidays Start Here!</h1>
+            <p class="lead  mb-5 ">Book your hotel with us and don't forget to grab an awesome hotel deal to save massive on your stay.</p>
+          </div>
+          <div class="row ">
+            <div class="col-md-6">
+              <div class="holiday-icons p-3 ">
+                <span><i class="fa-solid fa-utensils  rounded-5 bg-success bg-opacity-25 text-success opacity-75 fs-food p-3"></i></span>
+                <article class="p-1">
+                  <h4 class="fw-bold">Quality Food</h4>
+                  <p>Departure defective arranging rapturous did. Conduct denied adding worthy little.</p>
+                </article>
+  
+  
+              </div>
+  
+  
+            </div>
+  
+            <div class="col-md-6">
+              <div class="holiday-icons p-3 ">
+                <span><i class="fa-solid fa-stopwatch  rounded-5 bg-danger bg-opacity-25 text-danger fs-food p-3"></i></span>
+                <article class="p-1">
+                  <h4 class="fw-bold">Quick Services</h4>
+                  <p>Supposing so be resolving breakfast am or perfectly.</p>
+                </article>
+  
+  
+              </div>
+  
+  
+            </div>
+            <div class="col-md-6">
+              <div class="holiday-icons p-3 ">
+                <span><i class="fa-solid fa-circle-check rounded-5 orange   fs-food p-3"></i></span>
+                <article class="p-1">
+                  <h4 class="fw-bold">High Security</h4>
+                  <p>Arranging rapturous did believe him all had supported.</p>
+                </article>
+  
+  
+              </div>
+  
+  
+            </div>
+
+            <div class="col-md-6">
+              <div class="holiday-icons p-3 ">
+                <span><i class="fa-solid fa-bolt rounded-5 bg-info bg-opacity-25 text-primary fs-food p-3"></i></span>
+                <article class="p-1">
+                  <h4 class="fw-bold">24 Hours Alert</h4>
+                  <p>Rapturous did believe him all had supported.</p>
+                </article>
+  
+  
+              </div>
+  
+  
+            </div>
+          </div>
+
+          
+        </div>
+
+      </div>
+      </div>
+
+    </section>
+
+    <section >
+      <div class="row ">
+        <div class="featured-header w-100 text-center"><h1 class=" h-font fw-bold ">Featured Hotels</h1></div>
+        <div class="col-lg-3 col-sm-6 col-8">
+          <div class="featured p-3 ">
+            <div class="card border-0 position-relative transform" style="width: 16rem;">
+              <img src="image/images/category/hotel/01.jpg" class="card-img-top rounded-4 " alt="...">
+              <div class="card-body">
+                <h4 class="card-text fw-bold">Baga Comfort</h4>
+               <div class="side d-flex justify-content-between"> 
+                <h6 class="success">$455/starting at</h6>
+                <h6>4.5<i class="fa-solid fa-star text-warning"></i></h6>
+              </div>
+              </div>
+              <div class="black-front ">
+                <span class="bg-black text-white px-2  fs-15 rounded-4"><i class="fa-solid fa-location-dot fs-15 pe-1"></i>New York</span>
+              </div>
+            </div>
+            
+
+          </div>
+
+        </div>
+        <div class="col-lg-3 col-sm-6 col-8">
+          <div class="featured p-3">
+            <div class="card border-0 position-relative transform" style="width: 16rem;">
+              <img src="image/images/category/hotel/02.jpg" class="card-img-top rounded-4 " alt="...">
+              <div class="card-body">
+                <h4 class="card-text fw-bold">New Apollo Hotel</h4>
+               <div class="side d-flex justify-content-between"> <h6 class="success" >$585/starting at</h6>
+                <h6>4.5<i class="fa-solid fa-star text-warning"></i></h6></div>
+              </div>
+              <div class="black-front ">
+                <span class="bg-black text-white px-2   fs-15 rounded-4"><i class="fa-solid fa-location-dot fs-15 pe-1"></i>california</span>
+              </div>
+            </div>
+            
+            
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-8">
+          <div class="featured p-3">
+            <div class="card border-0 position-relative transform" style="width: 16rem;">
+              <img src="image/images/category/hotel/03.jpg" class="card-img-top rounded-4 " alt="...">
+              <div class="card-body">
+                <h4 class="card-text fw-bold">New Age Hotel</h4>
+               <div class="side d-flex justify-content-between"> <h6 class="success">$385/starting at</h6>
+                <h6>4.5<i class="fa-solid fa-star text-warning"></i></h6></div>
+              </div>
+              <div class="black-front ">
+                <span class="bg-black text-white px-2  fs-15 rounded-4"><i class="fa-solid fa-location-dot fs-15 pe-1"></i>Los Anglos</span>
+              </div>
+            </div>
+            
+            
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-8 ">
+          <div class="featured p-3">
+            <div class="card border-0 position-relative transform" style="width: 16rem;">
+              <img src="image/images/category/hotel/04.jpg" class="card-img-top rounded-4 " alt="...">
+              <div class="card-body">
+                <h4 class="card-text fw-bold">Helios Beach Resort</h4>
+               <div class="side d-flex justify-content-between">
+                 <h6 class="success">$655/starting at</h6>
+                <h6>4.5<i class="fa-solid fa-star text-warning"></i></h6>
+              </div>
+              </div>
+              <div class="black-front ">
+                <span class="bg-black text-white px-2  fs-15 rounded-4"><i class="fa-solid fa-location-dot fs-15 pe-1"></i>chicago</span>
+              </div>
+            </div>
+           
+            
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <section class="mt-5">
+      <div class="row p-5 gray-edit ">
+        <div class="col-md-2 col-sm-4 col-4 ">
+          <div class="gray">
+            <img src="image/images/client/01.svg" alt="" class="w-75"/>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <div class="gray">
+            <img src="image/images/client/02.svg" alt="" class="w-75"/>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-4">
+          <div class="gray">
+            <img src="image/images/client/03.svg" alt="" class="w-75"/>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-4">
+          <div class="gray ">
+            <img src="image/images/client/04.svg" alt="" class="w-60"/>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-4">
+          <div class="gray  mt-2">
+            <img src="image/images/client/05.svg" alt="" class="w-75"/>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <div class="gray mt-2">
+            <img src="image/images/client/06.svg" alt="" class="w-75"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section>
+     <div class="container">
+      <div class="row slide-edit">
+        <div class="col-md-10 m-4 ms-5 ">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner d-flex">
+              <div class="carousel-item active " data-bs-interval="20000">
+                 <div class="d-flex justify-content-center align-items-center  ">
+                  <img src="image/images/team/01.jpg" class="d-block w-50 rounded-4" alt="...">
+                  <div class="ms-4 align-self-center  p-4">
+                    <span><i class="fa-solid fa-quote-right quote text-info"></i></span>
+                    <p class="">Passage its ten led hearted removal cordial. Preference any astonished unreserved Mrs. understood the Preference unreserved.</p>
+                    <ul class="list-unstyled d-flex text-warning ">
+                      <li ><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star-half-stroke"></i></li>
+              
+                    </ul>
+                    <h6 class="fw-bold">Billy Visquez</h6>
+                    <p>Ceo og Google</p>
+              
+                  </div>
+                 </div>
+                
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="d-flex justify-content-center align-items-center ">
+                  <img src="image/images/team/02.jpg" class="d-block w-50 rounded-4" alt="...">
+                  <div class="ms-4 align-self-center p-4">
+                    <span><i class="fa-solid fa-quote-right quote text-info"></i></span>
+                    <p class="">Passage its ten led hearted removal cordial. Preference any astonished unreserved Mrs. understood the Preference unreserved.</p>
+                    <ul class="list-unstyled d-flex text-warning ">
+                      <li ><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star-half-stroke"></i></li>
+              
+                    </ul>
+                    <h6 class="fw-bold">Billy Visquez</h6>
+                    <p>Ceo og Google</p>
+              
+                  </div>
+                 </div>
+              </div>
+             
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+         
+        </div>
+
+
+      </div>
+     </div>
+
+    </section>
+
+
+    <section >
+      <div class="row p-5">
+        <div class="featured-header w-100 text-center mb-4"><h1 class=" h-font fw-bold ">Explore Nearby</h1></div>
+        
+        <div class="col-md-2">
+          <div class="explore d-flex flex-column align-items-center my-4 landscape ">
+            <img src="image/images/category/hotel/nearby/01.jpg" alt="landscape" class="w-75 rounded-circle landscape"/>
+            <div class=" mt-2">
+              <h6 class="fw-bold frances ">San Francisco</h6>
+              <p class="lead">13 min drive</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="explore d-flex flex-column align-items-center my-4 landscape">
+            <img src="image/images/category/hotel/nearby/02.jpg" alt="landscape" class="w-75 rounded-circle"/>
+            <div class=" mt-2">
+              <h6 class="fw-bold ">London</h6>
+              <p class="lead">13 min drive</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="explore d-flex flex-column align-items-center my-4 landscape">
+            <img src="image/images/category/hotel/nearby/03.jpg" alt="landscape" class="w-75 rounded-circle"/>
+            <div class=" mt-2">
+              <h6 class="fw-bold ">washenton</h6>
+              <p class="lead">13 min drive</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="explore d-flex flex-column align-items-center my-4 landscape">
+            <img src="image/images/category/hotel/nearby/04.jpg" alt="landscape" class="w-75 rounded-circle"/>
+            <div class=" mt-2">
+              <h6 class="fw-bold ">Los anglos</h6>
+              <p class="lead">13 min drive</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="explore d-flex flex-column align-items-center my-4 landscape">
+            <img src="image/images/category/hotel/nearby/05.jpg" alt="landscape" class="w-75 rounded-circle"/>
+            <div class=" mt-2">
+              <h6 class="fw-bold ">San Francisco</h6>
+              <p class="lead">13 min drive</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="explore d-flex flex-column align-items-center my-4 landscape">
+            <img src="image/images/category/hotel/nearby/06.jpg" alt="landscape" class="w-75 rounded-circle"/>
+            <div class=" mt-2">
+              <h6 class="fw-bold ">China</h6>
+              <p class="lead">13 min drive</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="explore d-flex flex-column align-items-center my-4 landscape">
+            <img src="image/images/category/hotel/nearby/07.jpg" alt="landscape" class="w-75 rounded-circle"/>
+            <div class=" mt-2">
+              <h6 class="fw-bold ">Turkey</h6>
+              <p class="lead">13 min drive</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="explore d-flex flex-column align-items-center my-4 landscape">
+            <img src="image/images/category/hotel/nearby/08.jpg" alt="landscape" class="w-75 rounded-circle"/>
+            <div class=" mt-2">
+              <h6 class="fw-bold ">San Francisco</h6>
+              <p class="lead">13 min drive</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="explore d-flex flex-column align-items-center my-4 landscape">
+            <img src="image/images/category/hotel/nearby/09.jpg" alt="landscape" class="w-75 rounded-circle"/>
+            <div class=" mt-2">
+              <h6 class="fw-bold ">South China</h6>
+              <p class="lead">13 min drive</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="explore d-flex flex-column align-items-center my-4 landscape">
+            <img src="image/images/category/hotel/nearby/10.jpg" alt="landscape" class="w-75 rounded-circle"/>
+            <div class=" mt-2">
+              <h6 class="fw-bold ">Italy</h6>
+              <p class="lead">13 min drive</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="explore d-flex flex-column align-items-center my-4 landscape">
+            <img src="image/images/category/hotel/nearby/11.jpg" alt="landscape" class="w-75 rounded-circle"/>
+            <div class=" mt-2">
+              <h6 class="fw-bold ">San Francisco</h6>
+              <p class="lead">13 min drive</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="explore d-flex flex-column align-items-center my-4 landscape">
+            <img src="image/images/category/hotel/nearby/01.jpg" alt="" class="w-75 rounded-circle"/>
+            <div class=" mt-2">
+              <h6 class="fw-bold ">France</h5>
+              <p class="lead">13 min drive</p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="bg-gray">
+     <div class="row">
+      <div class="col-md-6">
+        <div class="pre-footer d-flex rounded-3  bg-white   w-75 ms-5 mt-5 p-3">
+          <span class=""><i class="fa-solid fa-hand-holding-heart fs-40 me-3 mt-3"></i></span>
+          <div class="hand-heart">
+            <h5 class="fw-bold">24x7 Help</h5>
+            <p class="text-black text-opacity-50">If we fall short of your expectation in any way, let us know</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 ">
+        <div class="pre-footer d-flex rounded-3  bg-white  w-75 mt-5 p-3">
+          <span class=""><i class="fa-solid fa-hand-holding-dollar fs-40 me-3 mt-3"></i></span>
+          <div class="hand-heart">
+            <h5 class="fw-bold"> Payment Trust</h5>
+            <p class="text-black text-opacity-50">All refunds come with no questions asked</p>
+
+          </div>
+
+        </div>
+
+      </div>
+     </div>
+
+    
+      <div class="col-md-6">
+        <div class="google ms-3 p-4">
+          <h4 class="pb-3 fw-bold">Download app</h4>
+          <div class="first-google d-flex">
+            <a href=""><img src="image/images/element/google-play.svg" alt="" class="w-75"/></a>
+            <a href=""><img src="image/images/element/app-store.svg" alt="" class="w-75"/></a>
+    
+          </div>
+      </div>
+
+    </div>
+        
+     
+    </section>
+
+    <div class="bg-black g-4 footer">
+      <div class="row p-5 ms-3">
+        <div class="col-md-3">
+          <div class="item1">
+            <div class="footer-img ">
+              <img src="image/images/logo-light.svg" alt="footer-logo" class=" w-50 pb-3"/>
+            </div>
+            <article class="font-gray">
+              <p class="pb-2">Departure defective arranging rapturous did believe him all had supported.</p>
+              <h5 class="h6"><a><i class="fa-solid fa-phone"></i>+1234 568 963</a></h5>
+              <h5 class="h6"><a><i class="fa-regular fa-envelope"></i>example@gmail.com</a></h5>
+            </article>
+
+          </div>
+
+        </div>
+        <div class="col-md-2">
+          <div class="item1">
+            <div class="footer-text text-white">
+              <h4 class="fw-bold pb-2">Page</h4>
+            </div>
+            <div class=" page ">
+              <a href="#" class="text-decoration-none"><h6 class="font-gray pb-2">About us</h6></a>
+              <a href="#" class="text-decoration-none"><h6  class="font-gray pb-2">Contact u</h6></a>
+              <a href="#" class="text-decoration-none"><h6 class="font-gray pb-2" >News and Blog</h6></a>
+              <a href="#" class="text-decoration-none"><h6 class="font-gray pb-2">Meet a Team</h6></a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-2">
+          <div class="item1">
+            <div class="footer-text text-white">
+              <h4 class="fw-bold pb-2">Link</h4>
+            </div>
+            <div class=" page ">
+              <a href="#" class="text-decoration-none"><h6 class="font-gray pb-2">Sign up</h6></a>
+              <a href="#" class="text-decoration-none"><h6  class="font-gray pb-2">Sign in </h6></a>
+              <a href="#" class="text-decoration-none"><h6 class="font-gray pb-2" >Privacy policy</h6></a>
+              <a href="#" class="text-decoration-none"><h6 class="font-gray pb-2">Terms</h6></a>
+              <a href="#" class="text-decoration-none"><h6 class="font-gray pb-2">Cookie</h6></a>
+              <a href="#" class="text-decoration-none"><h6 class="font-gray pb-2">Support</h6></a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-2">
+          <div class="item1">
+            <div class="footer-text text-white">
+              <h4 class="fw-bold pb-2">Global Site</h4>
+            </div>
+            <div class="page">
+              <a href="#" class="text-decoration-none "><h6 class="font-gray pb-2">India</h6></a>
+              <a href="#" class="text-decoration-none"><h6  class="font-gray pb-2">California</h6></a>
+              <a href="#" class="text-decoration-none"><h6 class="font-gray pb-2" >Indonesia</h6></a>
+              <a href="#" class="text-decoration-none"><h6 class="font-gray pb-2">Malaysia</h6></a>
+            </div>
+
+          </div>
+
+        </div>
+
+        
+
+       
+
+        <div class="col-md-2">
+          <div class="item1">
+            <div class="footer-text text-white">
+              <h4 class="fw-bold pb-2">Booking</h4>
+            </div>
+            <div class="booking">
+              <ul class="list-unstyled pb-1 ">
+                <li class="p-1 fw-bold"><a href="#" class="text-decoration-none font-gray"><i class="fa-solid fa-hotel pe-2"></i>Hotel</a></li>
+                <li class="p-1 fw-bold"><a href="#" class="text-decoration-none font-gray"><i class="fa-solid fa-plane pe-2"></i>Flight</a></li>
+                <li class="p-1 fw-bold"><a href="#" class="text-decoration-none font-gray"><i class="fa-solid fa-earth-africa pe-2 "></i>Tour</a></li>
+                <li class="p-1 fw-bold"><a href="#" class="text-decoration-none font-gray"><i class="fa-solid fa-car pe-2"></i>Cab</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div  class=" row ms-3 p-4">
+        <div class="col-md-10">
+        <div class="top-links">
+          <h4 class="text-white pb-2 fw-bold">Top Links</h4>
+          <a href="#" class="text-decoration-none font-gray pe-2">Flights</a>
+          <a href="#" class="text-decoration-none font-gray pe-2"> Hotels</a>
+          <a href="#" class="text-decoration-none font-gray pe-2"> Tours</a>
+          <a href="#"  class="text-decoration-none font-gray pe-2" > Cabs</a>
+          <a href="#"  class="text-decoration-none font-gray pe-2"> About</a>
+          <a href="#"  class="text-decoration-none font-gray pe-2">Contact us</a>
+          <a href="#"  class="text-decoration-none font-gray pe-2">Blogs</a>
+          <a href="#"  class="text-decoration-none font-gray pe-2">Services</a>
+          <a href="#"  class="text-decoration-none font-gray pe-2">Detail page</a>
+          <a href="#"  class="text-decoration-none font-gray pe-2">Service</a>
+          <a href="#"  class="text-decoration-none font-gray pe-2">Policy</a>
+          <a href="#"  class="text-decoration-none font-gray pe-2"> Testimonials</a>
+          <a href="#"  class="text-decoration-none font-gray pe-2"> Newsletters</a>
+          <a href="#"  class="text-decoration-none font-gray pe-2"> Podcasts</a>
+          <a href="#"  class="text-decoration-none font-gray pe-2"> Protests</a>
+          <a href="#"  class="text-decoration-none font-gray pe-2"> NewsCyber</a>
+          <a href="#"  class="text-decoration-none font-gray pe-2">Education</a>
+          <a href="#"  class="text-decoration-none font-gray pe-2">  Sports</a>
+          <a href="#"  class="text-decoration-none font-gray pe-2"> Tech and Auto</a>
+          <a href="#"  class="text-decoration-none font-gray pe-2"> Opinion</a>
+          <a href="#"  class="text-decoration-none font-gray pe-2">  Share Market</a>
+          
+
+        </article>
+        </div>
+
+      </div>
+      </div>
+
+      <div class="row ms-3 p-5">
+        
+        <div class="col-md-6">
+          <div class="left-col">
+            <h4 class="text-white pb-2">Payment & Security</h4>
+            <a href="#"><img src="image/images/element/paypal.svg" class="w-15 pe-2"/></a>
+            <a href="#"><img src="image/images/element/visa.svg" class="w-10  pe-2"/></a>
+            <a href="#"><img src="image/images/element/mastercard.svg" class="w-10  pe-2"/></a>
+            <a href="#"><img src="image/images/element/expresscard.svg" class="w-10  pe-2"/></a>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+          <div class="right-col ">
+            <h4 class="text-white pb-2">Follow us on</h4>
+           <div class="collect-icons d-flex">
+            <div class="footer-icon text-center rounded-2 me-3 face-color">
+              <a href="#" ><i class="fa-brands fa-facebook-f text-white"></i></a>
+             </div>
+             <div class="footer-icon text-center rounded-2 me-3 insta-color">
+              <a href="#" ><i class="fa-brands fa-instagram text-white"></i></i></a>
+             </div>
+             <div class="footer-icon text-center rounded-2 me-3 twitt-color">
+              <a href="#" ><i class="fa-brands fa-twitter text-white"></i></a>
+             </div>
+             <div class="footer-icon text-center rounded-2 me-3 linkdin">
+              <a href="#" ><i class="fa-brands fa-linkedin-in text-white"></i></a>
+             </div>
+           </div>
+
+            
+
+          </div>
+
+        </div>
+
+        <div class="separate">
+          
+          <p class="over" >______________________________________________________________________________________________________________________________________________________________________________</p>
+          
+          <div class="d-flex justify-content-between py-2">
+
+            <p class="font-gray fs-6">Copyrights ©2023 Booking. Build by Webestica.</p>
+            <div class="final-links">
+              <a href="#"  class="text-decoration-none font-gray pe-2">Privacy policy</a>
+              <a href="#"  class="text-decoration-none font-gray pe-2"> Terms and conditions
+              </a>
+              <a href="#"  class="text-decoration-none font-gray pe-2"> Refund policy
+              </a>
+  
+            </div>
+
+          </div>
+         
+
+        </div>
+        
+
+       
+
+        <!-- <div class=" footer-icon bg-warning stuck ">
+
+        </div> -->
+
+       
+
+       
+      </div>
+
+    </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
